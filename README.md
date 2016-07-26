@@ -12,7 +12,7 @@ sudo apt-get install xdotool
 #使用方法
 1 python haha.py
 2 需要输入时： Ctrl + Alt + Space
-3 目前默认词库是全拼，所以输入汉语拼音吧.
+3 目前默认词库是全拼，所以输入汉语拼音吧.F1 - F4分别代表调号的1到4声.F5代表轻声.
 4 看到候选字词之后，可以使用Space键选择第一个选项或者使用数字键选中对应选项.
 5 使用pageup pagedown来翻页.
 
