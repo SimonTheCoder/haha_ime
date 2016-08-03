@@ -240,9 +240,9 @@ def main():
                 
 
                 if len(printed_result)>= index:
-                    hahaState.deactivate()
+                    #hahaState.deactivate()
                     printed_result[index-1].send_content()
-                    hahaState.activate()
+                    #hahaState.activate()
                     print "select: %s" % printed_result[index-1].content
                     current_result = []
                     printed_result = [] 
@@ -262,9 +262,9 @@ def main():
                     if len(parser.search_sequence) == 0:
                         parser.reset_search()
                 else:
-                    hahaState.deactivate()
-                    os.system("xdotool key BackSpace")
-                    hahaState.activate()
+                    #hahaState.deactivate()
+                    os.system("xdotool key --window `xdotool getwindowfocus` BackSpace")
+                    #hahaState.activate()
                 continue    
             if evt.detail == Keys.PageUp or evt.detail == Keys.PageDown:
                 if evt.detail == Keys.PageUp:

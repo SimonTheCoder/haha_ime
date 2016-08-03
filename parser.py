@@ -47,7 +47,7 @@ class Content:
         self.typeSequence = content
         self.content = content
     def send_content(self):
-        os.system('xdotool getwindowfocus windowfocus --sync type --clearmodifiers \'%s\'' % self.typeSequence )
+        os.system('xdotool type --window `xdotool getwindowfocus` --clearmodifiers \'%s\'' % self.typeSequence )
         #for c in self.typeSequence:
         #    os.system('xdotool type --delay 30 --clearmodifiers \'%s\'' % c )
         #subprocess.call('xdotool type --delay 30 --clearmodifiers \'%s\'' % self.typeSequence,shell=True )
