@@ -117,7 +117,7 @@ class Parser:
         self.search_sequence = []
         self.current_tree = root_parse_tree
         pass
-    def get_result(self,max_count=150):
+    def get_result(self,max_count=100):
         if len(self.search_sequence) < 1:
             return []
         results =self._search_content_in_tree(self.current_tree, max_count)
